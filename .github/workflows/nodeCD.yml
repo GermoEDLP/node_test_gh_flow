@@ -1,0 +1,15 @@
+name: Action custom
+
+on:
+  release:
+    types: [released]
+    branches: [disabled]
+
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./custom-actions
+        with:
+          TEXT: "Hola mundo"

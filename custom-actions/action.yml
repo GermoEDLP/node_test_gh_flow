@@ -1,0 +1,16 @@
+name: Deploy
+description: Subiendo a servidor desde remoto
+author: German Brassini
+
+inputs:
+  TEXT:
+    description: "Ejemplo"
+    required: true
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+branding:
+  icon: "activity"
+  color: "orange"
