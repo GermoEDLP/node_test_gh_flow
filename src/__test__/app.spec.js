@@ -13,4 +13,11 @@ describe('Get / Endpoint', ()=>{
     })
 })
 
+describe('Get /user Endpoint', ()=>{
+    it('should return a statusCode == 200', async()=>{
+        const res = await request(app).get('/user');
+        expect(res.statusCode).toEqual(200);
+    })
+})
+
 

@@ -5,6 +5,11 @@ const router = Router();
 
 
 router.get('/', getInfo)
+router.get('/user', (req, res) => {
+    res.json({
+        msg: 'German'
+    })
+})
 
 
 module.exports = router;
