@@ -10,6 +10,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./custom-actions
-        with:
-          TEXT: "Hola mundo"
+      - name: Run
+        run: |
+             echo "Texto de ejemplo"
