@@ -12,3 +12,12 @@ describe('Get / Endpoint', ()=>{
         expect(res.body.msg.indexOf('Hola')).not.toBe(-1);
     })
 })
+
+
+// TEST DE get /user
+describe('Get /user', ()=>{
+    it('should return a statusCode == 200', async()=>{
+        const res = await request(app).get('/user');
+        expect(res.statusCode).toEqual(200);
+    })
+});
