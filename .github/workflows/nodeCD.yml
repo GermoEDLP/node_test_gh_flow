@@ -1,4 +1,4 @@
-name: Action custom
+name: Deploy a servidor
 
 on:
   release:
